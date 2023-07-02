@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  background-color: transparent;
+
+  &__logo {
+    margin-right: 80px;
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-menu {
+      display: flex;
+
+      li {
+        color: var(--f-1-f-1-f-1, #F1F1F1);
+
+        & + li {
+          margin-left: 42px;
+        }
+      }
+    }
+
+    &-button {
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      padding: 15px 35px;
+      border-radius: 65px;
+      color: var(--151515, #151515);
+      font-family: Gilroy, sans-serif;
+      background: var(--f-1-f-1-f-1, #F1F1F1);
+    }
+  }
+}
