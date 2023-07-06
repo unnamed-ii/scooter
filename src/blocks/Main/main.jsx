@@ -2,6 +2,7 @@ import React from 'react';
 import './main.scss';
 import Container from "../../components/Container/container";
 import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/footer";
 
 const Main = () => {
     return (
@@ -28,6 +29,7 @@ const Main = () => {
                     </div>
                 </div>
             </Container>
+            <Footer/>
         </section>
     );
 };
