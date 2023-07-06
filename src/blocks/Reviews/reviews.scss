@@ -1,0 +1,55 @@
+.reviews {
+  padding-bottom: 128px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../images/main-bg.png');
+
+  &__inner {
+    width: 100%;
+
+    &-list {
+      margin: 40px 0 30px;
+
+      .slick-slider {
+        position: relative;
+
+        .slick-prev:before, .slick-next:before {
+          width: 45px;
+          height: 45px;
+          bottom: -230px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #fff;
+          content: url("../../images/icons/arrow-left.svg");
+        }
+
+        .slick-prev::before {
+          right: -1075px;
+        }
+
+        .slick-next::before {
+          right: 55px;
+          transform: rotateZ(180deg);
+        }
+      }
+    }
+  }
+}
+
+.review-card {
+  margin-right: 40px;
+  border-radius: 15px;
+  background-color: #151515;
+  padding: 40px 45px 40px 40px;
+
+  &__name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-top: 23px;
+  }
+}
