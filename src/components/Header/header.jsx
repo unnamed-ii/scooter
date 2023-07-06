@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.scss';
 import logo from '../../images/logo.svg';
+import Button from "../Button/button";
 
 const Header = () => {
     return (
@@ -14,9 +15,9 @@ const Header = () => {
                     <li><a href="#reviews">Отзывы</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
-                <button className="header__inner-button">
-                    Купить
-                </button>
+                <Button
+                    title={"Купить"}
+                />
             </div>
         </header>
     );
