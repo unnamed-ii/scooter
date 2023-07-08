@@ -6,12 +6,14 @@ import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
 import QuestionsAnswers from "./blocks/QuestionsAnswers/qa";
 import Design from "./blocks/Design/design";
+import Speed from "./blocks/Speed/speed";
 
 function App() {
     return (
         <>
             <Header />
             <Main />
+            <Speed />
             <Design />
             <About />
             <Reviews />
