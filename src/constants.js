@@ -1,4 +1,6 @@
 import aboutSlider1 from './images/about-slider.png';
+import minimalism from './images/design/minimalism.png';
+import panel from './images/design/panel.png';
 
 export const QuestionsAnswersData = [
     {
@@ -65,12 +67,14 @@ export const ScooterBatteryData = [
 
 export const ScooterDesignData = [
     {
+        image: minimalism,
         title: 'Минималистичный дизайн',
         text: 'Рама, компоненты и аксессуары скутера выдержаны в едином стиле, где удобство пользователя выходит на первое место.  Одного прикосновения достаточно, чтобы запустить самокат.'
     },
     {
+        image: panel,
         title: 'Удобная панель управления',
-        text: 'Удобно расположенные элементы управления. Отображение 8 типов данных в реальном времени: скорость, режим, заряд аккумулятора, состояние блокировки и другая информация.'
+        text: 'Удобно расположенные элементы управления. Отображение 8 типов данных в реальном времени: скорость, режим, заряд аккумулятора, состояние блокировки и другая информация.'
     }
 ];
 

@@ -5,12 +5,14 @@ import About from "./blocks/About/about";
 import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
 import QuestionsAnswers from "./blocks/QuestionsAnswers/qa";
+import Design from "./blocks/Design/design";
 
 function App() {
     return (
         <>
             <Header />
             <Main />
+            <Design />
             <About />
             <Reviews />
             <QuestionsAnswers />

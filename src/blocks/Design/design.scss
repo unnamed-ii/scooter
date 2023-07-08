@@ -1,0 +1,39 @@
+.design {
+
+  &__inner {
+
+    &-features {
+      display: flex;
+      margin-top: 80px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.feature-card {
+  height: 560px;
+  max-width: 550px;
+  position: relative;
+
+  &__image {
+    border-radius: 15px;
+  }
+
+  &__info {
+    left: 60px;
+    bottom: 65px;
+    max-width: 440px;
+    position: absolute;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 28px;
+    }
+
+    &-text {
+
+    }
+  }
+}
