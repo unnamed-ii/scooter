@@ -3,6 +3,7 @@ import './qa.scss';
 import Container from "../../components/Container/container";
 import Title from "../../components/Title/title";
 import Button from "../../components/Button/button";
+import Horizontal from "../../components/Horizontal/horizontal";
 import {QuestionsAnswersData} from "../../constants";
 
 
@@ -13,7 +14,7 @@ const QuestionAnswer = ({question, answer}) => {
             <h4 className="qa__title">
                 {question}
             </h4>
-            / Rectangle
+            <Horizontal width={100}/>
             <p className="qa__text">
                 {answer}
             </p>
