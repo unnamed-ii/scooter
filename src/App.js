@@ -7,6 +7,7 @@ import Header from "./components/Header/header";
 import QuestionsAnswers from "./blocks/QuestionsAnswers/qa";
 import Design from "./blocks/Design/design";
 import Speed from "./blocks/Speed/speed";
+import Product from "./blocks/Product/product";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <About />
             <Reviews />
             <QuestionsAnswers />
+            <Product />
             <Footer />
         </>
     );

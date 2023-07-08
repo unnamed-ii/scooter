@@ -9,4 +9,9 @@
   color: var(--151515, #151515);
   font-family: Gilroy, sans-serif;
   background: var(--f-1-f-1-f-1, #F1F1F1);
+
+  &.orange {
+    color: #fff;
+    background: var(--ff-4-c-0-d, #FF4C0D);
+  }
 }

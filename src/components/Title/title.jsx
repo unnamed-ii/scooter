@@ -6,7 +6,7 @@ const Title = ({title, subtitle, color}) => {
         <div className={"block-title" + (color === "white" ? " white" : "")}>
             <h2>{title}</h2>
             {subtitle &&
-                <div>{subtitle}</div>
+                <div className="block-title__subtitle">{subtitle}</div>
             }
         </div>
     );

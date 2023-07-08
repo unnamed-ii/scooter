@@ -1,15 +1,15 @@
 .block-title {
+  color: #FF4C0D;
   font-size: 45px;
-  font-family: Gilroy, sans-serif;
-  font-style: normal;
   font-weight: 500;
   line-height: 110%;
-  color: #FF4C0D;
+  font-style: normal;
 
   &.white {
     color: #fff;
 
-    &:last-child {
+    .block-title__subtitle {
+      margin-top: 25px;
       color: #FF4C0D;
     }
   }
