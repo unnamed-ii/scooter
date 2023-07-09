@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Main from "./blocks/Main/main";
 import Reviews from "./blocks/Reviews/reviews";
 import About from "./blocks/About/about";
@@ -10,18 +10,21 @@ import Speed from "./blocks/Speed/speed";
 import Product from "./blocks/Product/product";
 
 function App() {
+    const [theme, setTheme] = useState("dark")
+    const className = "app-" + theme;
+
     return (
-        <>
-            <Header />
-            <Main />
-            <Speed />
-            <Design />
-            <About />
-            <Reviews />
-            <QuestionsAnswers />
-            <Product />
-            <Footer />
-        </>
+        <div className={className}>
+            <Header/>
+            <Main theme={theme} setTheme={setTheme}/>
+            <Speed/>
+            <Design/>
+            <About/>
+            <Reviews/>
+            <QuestionsAnswers/>
+            <Product/>
+            <Footer/>
+        </div>
     );
 }
 

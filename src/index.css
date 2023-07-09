@@ -19,10 +19,18 @@ body {
     font-style: normal;
     letter-spacing: -0.14px;
     font-family: Gilroy, sans-serif;
+}
 
+.app-dark {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('images/main-bg.png');
+}
+
+.app-light {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('images/main-white-bg.png');
 }
 
 ul {
