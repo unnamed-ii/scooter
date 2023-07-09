@@ -1,6 +1,7 @@
 import React from 'react';
 import './main.scss';
 import Container from "../../components/Container/container";
+import SwitchButton from "../../components/SwitchButton/switchbutton";
 
 const Main = () => {
     return (
@@ -19,9 +20,7 @@ const Main = () => {
                         <br/>
                         как и выглядит.
                     </h3>
-                    <div className="main__inner-toggle">
-                        toggle
-                    </div>
+                    <SwitchButton />
                 </div>
             </Container>
         </section>
