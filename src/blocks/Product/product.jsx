@@ -4,6 +4,7 @@ import Container from "../../components/Container/container";
 import Title from "../../components/Title/title";
 import Button from "../../components/Button/button";
 import {ScooterSetData} from "../../constants";
+import SwitchButton from "../../components/SwitchButton/switchbutton";
 
 const Product = () => {
     return (
@@ -17,7 +18,7 @@ const Product = () => {
                             color={"white"}
                             className="title"
                         />
-                        <div>toggle</div>
+                        <SwitchButton />
                         <Button
                             title={"Купить"}
                             color={"orange"}
