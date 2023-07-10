@@ -9,6 +9,7 @@ import Design from "./blocks/Design/design";
 import Speed from "./blocks/Speed/speed";
 import Product from "./blocks/Product/product";
 import Tabs from "./blocks/Tabs/tabs";
+import advantageDefaultImage from "./images/advantages/default.png";
 import {ScooterAdvantagesData} from "./constants";
 
 function App() {
@@ -20,11 +21,12 @@ function App() {
             <Header/>
             <Main theme={theme} setTheme={setTheme}/>
             <Tabs
-                titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
-                titleColor={"white"}
                 quantity={'3'}
+                titleColor={"white"}
+                defaultImage={advantageDefaultImage}
                 endpoints={{0:'0', 1:'100', 2:'204'}}
                 dataForRendering={ScooterAdvantagesData}
+                titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
             />
             <Speed/>
             <Design/>

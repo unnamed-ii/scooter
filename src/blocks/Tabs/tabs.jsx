@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './tabs.scss';
 import Container from "../../components/Container/container";
 import Title from "../../components/Title/title";
-import defaultPhoto from "../../images/advantages/default.png";
 
 const Tab = ({idx, activeTab, handleActiveTab, advantage}) => {
     return (
@@ -19,7 +18,7 @@ const Tab = ({idx, activeTab, handleActiveTab, advantage}) => {
     )
 }
 
-const Tabs = ({quantity, endpoints, dataForRendering,titleText, titleColor}) => {
+const Tabs = ({quantity, endpoints, dataForRendering,titleText, titleColor, defaultImage}) => {
     const [activeTab, setActiveTab] = useState(0);
     const handleActiveTab = (idx) => setActiveTab(idx);
 
@@ -49,7 +48,7 @@ const Tabs = ({quantity, endpoints, dataForRendering,titleText, titleColor}) => 
                     <div className="advantages__inner-photos">
                         <img src={dataForRendering[activeTab].image} alt="Image"
                              className="advantages__inner-photos__active"/>
-                        <img src={defaultPhoto} alt="Image" className="advantages__inner-photos__default"/>
+                        <img src={defaultImage} alt="Image" className="advantages__inner-photos__default"/>
                     </div>
                 </div>
             </Container>
