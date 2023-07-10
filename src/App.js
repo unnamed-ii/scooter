@@ -10,7 +10,8 @@ import Speed from "./blocks/Speed/speed";
 import Product from "./blocks/Product/product";
 import Tabs from "./blocks/Tabs/tabs";
 import advantageDefaultImage from "./images/advantages/default.png";
-import {ScooterAdvantagesData} from "./constants";
+import safetyDefaultImage from "./images/safety/default.png";
+import {ScooterAdvantagesData, ScooterSafetyData} from "./constants";
 
 function App() {
     const [theme, setTheme] = useState("dark")
@@ -30,6 +31,14 @@ function App() {
             />
             <Speed/>
             <Design/>
+            <Tabs
+                quantity={'4'}
+                titleColor={"orange"}
+                defaultImage={safetyDefaultImage}
+                dataForRendering={ScooterSafetyData}
+                titleText={"Заботится о вашей безопасности"}
+                endpoints={{0:'0', 1:'100', 2:'200', 3:'300'}}
+            />
             <About/>
             <Reviews/>
             <QuestionsAnswers/>

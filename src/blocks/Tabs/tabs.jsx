@@ -18,24 +18,24 @@ const Tab = ({idx, activeTab, handleActiveTab, advantage}) => {
     )
 }
 
-const Tabs = ({quantity, endpoints, dataForRendering,titleText, titleColor, defaultImage}) => {
+const Tabs = ({quantity, endpoints, dataForRendering, titleText, titleColor, defaultImage}) => {
     const [activeTab, setActiveTab] = useState(0);
     const handleActiveTab = (idx) => setActiveTab(idx);
-
-    const styles = {transform: `translateX(${endpoints[activeTab]}%)`}
+    let tabsWidth = Math.floor(100 / quantity);
+    const styles = {transform: `translateX(${endpoints[activeTab]}%)`, width: `${tabsWidth}%`}
 
     return (
         <section className="advantages">
             <Container>
                 <div className="advantages__inner">
-                    <div className="progress-horizontal">
-                        <span style={styles}/>
-                    </div>
                     <Title
                         title={titleText}
                         color={titleColor}
                     />
                     <div className={`advantages__inner-list of__${quantity}`}>
+                        <div className={`progress-horizontal of__${quantity}`}>
+                            <span style={styles}/>
+                        </div>
                         {dataForRendering.map((advantage, idx) => (
                             <Tab
                                 idx={idx}
