@@ -8,6 +8,7 @@ import QuestionsAnswers from "./blocks/QuestionsAnswers/qa";
 import Design from "./blocks/Design/design";
 import Speed from "./blocks/Speed/speed";
 import Product from "./blocks/Product/product";
+import SwitchButton from "./components/SwitchButton/switchbutton";
 
 function App() {
     const [theme, setTheme] = useState("dark")
@@ -22,7 +23,7 @@ function App() {
             <About/>
             <Reviews/>
             <QuestionsAnswers/>
-            <Product/>
+            <Product theme={theme} setTheme={setTheme}/>
             <Footer/>
         </div>
     );

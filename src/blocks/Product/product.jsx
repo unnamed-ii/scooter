@@ -6,7 +6,7 @@ import Button from "../../components/Button/button";
 import {ScooterSetData} from "../../constants";
 import SwitchButton from "../../components/SwitchButton/switchbutton";
 
-const Product = () => {
+const Product = ({theme, setTheme}) => {
     return (
         <section className="product">
             <Container>
@@ -18,7 +18,7 @@ const Product = () => {
                             color={"white"}
                             className="title"
                         />
-                        <SwitchButton />
+                        <SwitchButton theme={theme} setTheme={setTheme}/>
                         <Button
                             title={"Купить"}
                             color={"orange"}
