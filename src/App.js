@@ -20,6 +20,8 @@ function App() {
             <Header/>
             <Main theme={theme} setTheme={setTheme}/>
             <Tabs
+                titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
+                titleColor={"white"}
                 quantity={'3'}
                 endpoints={{0:'0', 1:'100', 2:'204'}}
                 dataForRendering={ScooterAdvantagesData}

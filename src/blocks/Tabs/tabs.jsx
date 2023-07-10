@@ -19,7 +19,7 @@ const Tab = ({idx, activeTab, handleActiveTab, advantage}) => {
     )
 }
 
-const Tabs = ({quantity, endpoints, dataForRendering}) => {
+const Tabs = ({quantity, endpoints, dataForRendering,titleText, titleColor}) => {
     const [activeTab, setActiveTab] = useState(0);
     const handleActiveTab = (idx) => setActiveTab(idx);
 
@@ -33,8 +33,8 @@ const Tabs = ({quantity, endpoints, dataForRendering}) => {
                         <span style={styles}/>
                     </div>
                     <Title
-                        title={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
-                        color={"white"}
+                        title={titleText}
+                        color={titleColor}
                     />
                     <div className={`advantages__inner-list of__${quantity}`}>
                         {dataForRendering.map((advantage, idx) => (
