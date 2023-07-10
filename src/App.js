@@ -8,7 +8,8 @@ import QuestionsAnswers from "./blocks/QuestionsAnswers/qa";
 import Design from "./blocks/Design/design";
 import Speed from "./blocks/Speed/speed";
 import Product from "./blocks/Product/product";
-import SwitchButton from "./components/SwitchButton/switchbutton";
+import Tabs from "./blocks/Tabs/tabs";
+import {ScooterAdvantagesData} from "./constants";
 
 function App() {
     const [theme, setTheme] = useState("dark")
@@ -18,6 +19,11 @@ function App() {
         <div className={className}>
             <Header/>
             <Main theme={theme} setTheme={setTheme}/>
+            <Tabs
+                quantity={'3'}
+                endpoints={{0:'0', 1:'100', 2:'204'}}
+                dataForRendering={ScooterAdvantagesData}
+            />
             <Speed/>
             <Design/>
             <About/>
