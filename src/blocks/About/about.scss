@@ -24,14 +24,14 @@
 
   &__slide {
     display: flex;
-    position: relative;
     justify-content: center;
 
     &-inner {
+      position: relative;
 
       &__info {
         z-index: 1;
-        left: 370px;
+        left: 140px;
         bottom: 120px;
         position: absolute;
 
@@ -39,6 +39,10 @@
           margin-top: 36px;
           max-width: 460px;
           color: var(--151515, #151515);
+
+          p + p {
+            margin-top: 24px;
+          }
         }
       }
     }
