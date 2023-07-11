@@ -1,0 +1,26 @@
+.mobile-app {
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    &-info {
+
+      .text {
+        margin: 48px 0 67px;
+      }
+
+      .links {
+        a + a {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    &-image {
+      left: 595px;
+      position: absolute;
+    }
+  }
+}

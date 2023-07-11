@@ -12,6 +12,7 @@ import Tabs from "./blocks/Tabs/tabs";
 import advantageDefaultImage from "./images/advantages/default.png";
 import safetyDefaultImage from "./images/safety/default.png";
 import {ScooterAdvantagesData, ScooterSafetyData} from "./constants";
+import MobileApp from "./blocks/MobileApp/mobileapp";
 
 function App() {
     const [theme, setTheme] = useState("dark")
@@ -39,6 +40,7 @@ function App() {
                 titleText={"Заботится о вашей безопасности"}
                 endpoints={{0:'0', 1:'100', 2:'200', 3:'300'}}
             />
+            <MobileApp theme={theme}/>
             <About/>
             <Reviews/>
             <QuestionsAnswers/>
