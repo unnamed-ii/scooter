@@ -6,36 +6,36 @@ import Title from "../../components/Title/title";
 const Tab = ({idx, activeTab, handleActiveTab, advantage}) => {
     return (
         <div
-            className={"advantage" + (idx === activeTab ? " active" : "")}
+            className={"tab" + (idx === activeTab ? " active" : "")}
             onClick={() => handleActiveTab(idx)}>
-            <div className="advantage__title">
+            <div className="tab__title">
                 {advantage.title}
             </div>
-            <div className="advantage__text">
+            <div className="tab__text">
                 {advantage.text}
             </div>
         </div>
     )
 }
 
-const Tabs = ({quantity, endpoints, dataForRendering, titleText, titleColor, defaultImage, id}) => {
+const Tabs = ({sectionName, endpoints, dataForRendering, titleText, titleColor, defaultImage, id}) => {
     const [activeTab, setActiveTab] = useState(0);
     const handleActiveTab = (idx) => setActiveTab(idx);
-    let tabsWidth = Math.floor(100 / quantity);
-    const styles = {transform: `translateX(${endpoints[activeTab]}%)`, width: `${tabsWidth}%`}
+    const horizontalSpanWidth = sectionName === "advantages" ? 33 : 25;
+    const translateXTo = {transform: `translateX(${endpoints[activeTab]}%)`, width: `${horizontalSpanWidth}%`}
 
     return (
-        <section className="advantages" id={id}>
+        <section className={`tabs ${sectionName}`} id={id}>
             <Container>
-                <div className="advantages__inner">
+                <div className="tabs__inner">
                     <Title
                         width={838}
                         title={titleText}
                         color={titleColor}
                     />
-                    <div className={`advantages__inner-list of__${quantity}`}>
-                        <div className={`progress-horizontal of__${quantity}`}>
-                            <span style={styles}/>
+                    <div className={`tabs__inner-list ${sectionName}`}>
+                        <div className={`progress-horizontal ${sectionName}`}>
+                            <span style={translateXTo}/>
                         </div>
                         {dataForRendering.map((advantage, idx) => (
                             <Tab
@@ -46,10 +46,15 @@ const Tabs = ({quantity, endpoints, dataForRendering, titleText, titleColor, def
                             />
                         ))}
                     </div>
-                    <div className="advantages__inner-photos">
-                        <img src={dataForRendering[activeTab].image} alt="Image"
-                             className="advantages__inner-photos__active"/>
-                        <img src={defaultImage} alt="Image" className="advantages__inner-photos__default"/>
+                    <div className="tabs__inner-photos">
+                        <img src={dataForRendering[activeTab].image}
+                             alt="Image"
+                             className="tabs__inner-photos__active"
+                        />
+                        <img src={defaultImage}
+                             alt="Image"
+                             className="tabs__inner-photos__default"
+                        />
                     </div>
                 </div>
             </Container>

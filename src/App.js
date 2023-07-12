@@ -23,9 +23,9 @@ function App() {
             <Header/>
             <Main theme={theme} setTheme={setTheme}/>
             <Tabs
-                quantity={'3'}
                 id={"advantages"}
                 titleColor={"white"}
+                sectionName={'advantages'}
                 defaultImage={advantageDefaultImage}
                 endpoints={{0:'0', 1:'100', 2:'204'}}
                 dataForRendering={ScooterAdvantagesData}
@@ -34,9 +34,9 @@ function App() {
             <Speed/>
             <Design/>
             <Tabs
-                quantity={'4'}
                 id={"safety"}
                 titleColor={"orange"}
+                sectionName={'safety'}
                 defaultImage={safetyDefaultImage}
                 dataForRendering={ScooterSafetyData}
                 titleText={"Заботится о вашей безопасности"}

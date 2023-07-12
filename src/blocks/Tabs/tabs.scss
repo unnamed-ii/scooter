@@ -1,6 +1,4 @@
-.advantages {
-  margin-bottom: 120px;
-
+.tabs {
   &__inner {
     width: 100%;
 
@@ -27,19 +25,19 @@
         }
       }
 
-      &.of__3 {
-        .advantage {
+      &.advantages {
+        .tab {
           max-width: 360px;
         }
       }
 
-      &.of__4 {
-        .advantage {
+      &.safety {
+        .tab {
           max-width: 260px;
         }
       }
 
-      .advantage {
+      .tab {
         opacity: .5;
         color: #F1F1F1;
         cursor: pointer;
@@ -72,4 +70,12 @@
       }
     }
   }
+}
+
+.tabs.advantages {
+  margin-bottom: 120px;
+}
+
+.tabs.safety {
+  margin-bottom: 258px;
 }
