@@ -1,10 +1,10 @@
 import React from 'react';
 import './product.scss'
-import Container from "../../components/Container/container";
-import Title from "../../components/Title/title";
-import Button from "../../components/Button/button";
-import {ScooterSetData} from "../../constants";
 import SwitchButton from "../../components/SwitchButton/switchbutton";
+import Container from "../../components/Container/container";
+import Button from "../../components/Button/button";
+import Title from "../../components/Title/title";
+import {ScooterSetData} from "../../constants";
 
 const Product = ({theme, setTheme}) => {
     return (
@@ -18,7 +18,10 @@ const Product = ({theme, setTheme}) => {
                             color={"white"}
                             className="title"
                         />
-                        <SwitchButton theme={theme} setTheme={setTheme}/>
+                        <SwitchButton
+                            theme={theme}
+                            setTheme={setTheme}
+                        />
                         <Button
                             title={"Купить"}
                             color={"orange"}

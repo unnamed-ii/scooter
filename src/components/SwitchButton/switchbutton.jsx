@@ -3,12 +3,10 @@ import './switchbutton.scss';
 
 const SwitchButton = ({theme, setTheme}) => {
     const [isChecked, setIsChecked] = useState(false);
-
     const handleCheckbox = () => {
         setTheme(theme === "dark" ? "light" : "dark")
         setIsChecked(!isChecked);
     }
-    const setColorForSpan = () => isChecked ? " switched" : "";
 
     return (
         <label className={`switch ${theme}`}>

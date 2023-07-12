@@ -1,13 +1,13 @@
 import React from 'react';
 import './reviews.scss';
-import Title from "../../components/Title/title";
-import Button from "../../components/Button/button";
-import {ReviewsData} from "../../constants";
+import Horizontal from "../../components/Horizontal/horizontal";
 import Container from "../../components/Container/container";
+import Button from "../../components/Button/button";
+import Title from "../../components/Title/title";
+import {ReviewsData} from "../../constants";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Horizontal from "../../components/Horizontal/horizontal";
 
 const ReviewCard = ({name, text}) => {
     return (

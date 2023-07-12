@@ -1,5 +1,5 @@
 .about {
-  padding: 120px 0;
+  margin-bottom: 140px;
   position: relative;
 
   .slick-dots {
@@ -30,15 +30,14 @@
       position: relative;
 
       &__info {
-        z-index: 1;
         left: 140px;
         bottom: 120px;
         position: absolute;
 
         .text {
+          color: #151515;
           margin-top: 36px;
           max-width: 460px;
-          color: var(--151515, #151515);
 
           p + p {
             margin-top: 24px;

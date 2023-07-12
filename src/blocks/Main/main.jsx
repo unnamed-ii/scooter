@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.scss';
-import Container from "../../components/Container/container";
 import SwitchButton from "../../components/SwitchButton/switchbutton";
+import Container from "../../components/Container/container";
 
 const Main = ({theme, setTheme}) => {
     return (

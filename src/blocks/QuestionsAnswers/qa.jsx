@@ -1,14 +1,12 @@
 import React from 'react';
 import './qa.scss';
-import Container from "../../components/Container/container";
-import Title from "../../components/Title/title";
-import Button from "../../components/Button/button";
 import Horizontal from "../../components/Horizontal/horizontal";
+import Container from "../../components/Container/container";
+import Button from "../../components/Button/button";
+import Title from "../../components/Title/title";
 import {QuestionsAnswersData} from "../../constants";
 
-
-const QuestionAnswer = ({question, answer}) => {
-
+const QA = ({question, answer}) => {
     return (
         <div className="qa">
             <h4 className="qa__title">
@@ -22,7 +20,7 @@ const QuestionAnswer = ({question, answer}) => {
     )
 }
 
-const QuestionsAnswers = () => {
+const FAQ = () => {
     return (
         <section className="qas" id="faq">
             <Container>
@@ -41,7 +39,7 @@ const QuestionsAnswers = () => {
                     </div>
                     <ul className="qas__inner-list">
                         {QuestionsAnswersData.map(element => (
-                            <QuestionAnswer
+                            <QA
                                 question={element.question}
                                 answer={element.answer}
                             />
@@ -53,4 +51,4 @@ const QuestionsAnswers = () => {
     );
 };
 
-export default QuestionsAnswers;
+export default FAQ;

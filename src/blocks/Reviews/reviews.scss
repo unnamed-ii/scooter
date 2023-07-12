@@ -1,15 +1,17 @@
 .reviews {
-  padding-bottom: 128px;
+  padding-bottom: 137px;
 
   &__inner {
     width: 100%;
+
     &-list {
       margin: 40px 0 30px;
 
       .slick-slider {
         position: relative;
 
-        .slick-prev:before, .slick-next:before {
+        .slick-prev:before,
+        .slick-next:before {
           width: 45px;
           height: 45px;
           bottom: -230px;

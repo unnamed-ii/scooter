@@ -1,4 +1,5 @@
 .mobile-app {
+  margin-bottom: 120px;
 
   &__inner {
     width: 100%;
@@ -6,6 +7,7 @@
     position: relative;
 
     &-info {
+      max-width: 505px;
 
       .text {
         margin: 48px 0 67px;
@@ -20,6 +22,7 @@
 
     &-image {
       left: 595px;
+      top: -137px;
       position: absolute;
     }
   }

@@ -21,6 +21,7 @@ const Tab = ({idx, activeTab, handleActiveTab, advantage}) => {
 const Tabs = ({sectionName, endpoints, dataForRendering, titleText, titleColor, defaultImage, id}) => {
     const [activeTab, setActiveTab] = useState(0);
     const handleActiveTab = (idx) => setActiveTab(idx);
+
     const horizontalSpanWidth = sectionName === "advantages" ? 33 : 25;
     const translateXTo = {transform: `translateX(${endpoints[activeTab]}%)`, width: `${horizontalSpanWidth}%`}
 

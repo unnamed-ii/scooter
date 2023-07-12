@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './header.scss';
-import logo from '../../images/logo.svg';
-import Button from "../Button/button";
 import Container from "../Container/container";
+import Button from "../Button/button";
+import logo from '../../images/logo.svg';
 
 const Header = () => {
     const [onScroll, setOnScroll] = useState(false);

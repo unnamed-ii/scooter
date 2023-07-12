@@ -1,8 +1,8 @@
 import React from 'react';
 import './speed.scss'
 import Container from "../../components/Container/container";
-import speedBg from "../../images/speed-bg.png";
 import {ReactComponent as LogoIcon} from "../../images/logo.svg";
+import speedBg from "../../images/speed-bg.png";
 
 const Speed = () => {
     return (
