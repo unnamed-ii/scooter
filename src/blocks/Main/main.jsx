@@ -3,7 +3,7 @@ import './main.scss';
 import SwitchButton from "../../components/SwitchButton/switchbutton";
 import Container from "../../components/Container/container";
 
-const Main = ({theme, setTheme}) => {
+const Main = () => {
     return (
         <section className="main">
             <Container>
@@ -20,7 +20,7 @@ const Main = ({theme, setTheme}) => {
                         <br/>
                         как и выглядит.
                     </h3>
-                    <SwitchButton theme={theme} setTheme={setTheme}/>
+                    <SwitchButton />
                 </div>
             </Container>
         </section>

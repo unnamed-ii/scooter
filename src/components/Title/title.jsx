@@ -9,7 +9,7 @@ const Title = ({title, subtitle, color, width}) => {
             </h2>
             {subtitle &&
                 <div className="block-title__subtitle">
-                    subtitle}
+                    {subtitle}
                 </div>
             }
         </div>

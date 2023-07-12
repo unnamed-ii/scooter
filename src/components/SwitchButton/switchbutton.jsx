@@ -1,8 +1,11 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './switchbutton.scss';
+import {ThemeContext} from "../../Context";
 
-const SwitchButton = ({theme, setTheme}) => {
+const SwitchButton = () => {
+    const {theme, setTheme} = useContext(ThemeContext);
     const [isChecked, setIsChecked] = useState(false);
+
     const handleCheckbox = () => {
         setTheme(theme === "dark" ? "light" : "dark")
         setIsChecked(!isChecked);

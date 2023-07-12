@@ -13,42 +13,45 @@ import MobileApp from "./blocks/MobileApp/mobileapp";
 import {ScooterAdvantagesData, ScooterSafetyData} from "./constants";
 import advantageDefaultImage from "./images/advantages/default.png";
 import safetyDefaultImage from "./images/safety/default.png";
+import {ThemeContext} from './Context';
 
 function App() {
-    const [theme, setTheme] = useState("dark")
+    const [theme, setTheme] = useState("dark");
     const className = "app-" + theme;
 
     return (
-        <div className={className}>
-            <Header/>
-            <Main theme={theme} setTheme={setTheme}/>
-            <Tabs
-                id={"advantages"}
-                titleColor={"white"}
-                sectionName={'advantages'}
-                defaultImage={advantageDefaultImage}
-                endpoints={{0:'0', 1:'100', 2:'204'}}
-                dataForRendering={ScooterAdvantagesData}
-                titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
-            />
-            <Speed/>
-            <Design/>
-            <Tabs
-                id={"safety"}
-                titleColor={"orange"}
-                sectionName={'safety'}
-                defaultImage={safetyDefaultImage}
-                dataForRendering={ScooterSafetyData}
-                titleText={"Заботится о вашей безопасности"}
-                endpoints={{0:'0', 1:'100', 2:'200', 3:'300'}}
-            />
-            <MobileApp theme={theme}/>
-            <About/>
-            <Reviews/>
-            <FAQ/>
-            <Product theme={theme} setTheme={setTheme}/>
-            <Footer/>
-        </div>
+        <ThemeContext.Provider value={{theme, setTheme}}>
+            <div className={className}>
+                <Header/>
+                <Main />
+                <Tabs
+                    id={"advantages"}
+                    titleColor={"white"}
+                    sectionName={'advantages'}
+                    defaultImage={advantageDefaultImage}
+                    endpoints={{0:'0', 1:'100', 2:'204'}}
+                    dataForRendering={ScooterAdvantagesData}
+                    titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
+                />
+                <Speed/>
+                <Design/>
+                <Tabs
+                    id={"safety"}
+                    titleColor={"orange"}
+                    sectionName={'safety'}
+                    defaultImage={safetyDefaultImage}
+                    dataForRendering={ScooterSafetyData}
+                    titleText={"Заботится о вашей безопасности"}
+                    endpoints={{0:'0', 1:'100', 2:'200', 3:'300'}}
+                />
+                <MobileApp />
+                <About/>
+                <Reviews/>
+                <FAQ/>
+                <Product />
+                <Footer/>
+            </div>
+        </ThemeContext.Provider>
     );
 }
 

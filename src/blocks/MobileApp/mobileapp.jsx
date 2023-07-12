@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './mobileapp.scss';
 import Container from "../../components/Container/container";
 import Title from "../../components/Title/title";
@@ -6,8 +6,11 @@ import blackPhone from "../../images/mobile-app/black-phone.png";
 import whitePhone from "../../images/mobile-app/white-phone.png";
 import appStore from "../../images/mobile-app/app-store.png";
 import playMarket from "../../images/mobile-app/play-market.png";
+import {ThemeContext} from "../../Context";
 
-const MobileApp = ({theme}) => {
+const MobileApp = () => {
+    const {theme} = useContext(ThemeContext);
+
     return (
         <section className="mobile-app">
             <Container>
