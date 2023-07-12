@@ -24,7 +24,7 @@ const QuestionAnswer = ({question, answer}) => {
 
 const QuestionsAnswers = () => {
     return (
-        <section className="qas">
+        <section className="qas" id="faq">
             <Container>
                 <div className="qas__inner">
                     <div className="qas__inner-block">

@@ -32,7 +32,7 @@ const About = () => {
     };
 
     return (
-        <section className="about">
+        <section className="about" id="about-product">
             <Slider {...sliderSettings}>
                 {ScooterAboutSliderData.map(slide => (
                     <AboutSlide

@@ -22,7 +22,7 @@ const DesignFeatureCard = ({bgImage, title, text}) => {
 
 const Design = () => {
     return (
-        <section className="design">
+        <section className="design" id="design">
             <Container>
                 <div className="design__inner">
                     <Title

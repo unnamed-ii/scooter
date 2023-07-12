@@ -18,14 +18,14 @@ const Tab = ({idx, activeTab, handleActiveTab, advantage}) => {
     )
 }
 
-const Tabs = ({quantity, endpoints, dataForRendering, titleText, titleColor, defaultImage}) => {
+const Tabs = ({quantity, endpoints, dataForRendering, titleText, titleColor, defaultImage, id}) => {
     const [activeTab, setActiveTab] = useState(0);
     const handleActiveTab = (idx) => setActiveTab(idx);
     let tabsWidth = Math.floor(100 / quantity);
     const styles = {transform: `translateX(${endpoints[activeTab]}%)`, width: `${tabsWidth}%`}
 
     return (
-        <section className="advantages">
+        <section className="advantages" id={id}>
             <Container>
                 <div className="advantages__inner">
                     <Title

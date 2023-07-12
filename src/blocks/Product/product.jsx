@@ -8,7 +8,7 @@ import SwitchButton from "../../components/SwitchButton/switchbutton";
 
 const Product = ({theme, setTheme}) => {
     return (
-        <section className="product">
+        <section className="product" id="product">
             <Container>
                 <div className="product__inner">
                     <div className="product__inner-info">
