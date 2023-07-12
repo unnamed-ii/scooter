@@ -7,6 +7,7 @@ import Container from "../../components/Container/container";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Horizontal from "../../components/Horizontal/horizontal";
 
 const ReviewCard = ({name, text}) => {
     return (
@@ -14,6 +15,7 @@ const ReviewCard = ({name, text}) => {
             <div className="review-card__name">
                 {name || "Имя скрыто"}
             </div>
+            <Horizontal width={100}/>
             <div className="review-card__text">
                 {text}
             </div>
@@ -25,7 +27,7 @@ const Reviews = () => {
     const sliderSettings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1
     };
 
