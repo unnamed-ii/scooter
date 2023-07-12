@@ -9,10 +9,10 @@ import Design from "./blocks/Design/design";
 import Speed from "./blocks/Speed/speed";
 import Product from "./blocks/Product/product";
 import Tabs from "./blocks/Tabs/tabs";
+import MobileApp from "./blocks/MobileApp/mobileapp";
 import advantageDefaultImage from "./images/advantages/default.png";
 import safetyDefaultImage from "./images/safety/default.png";
 import {ScooterAdvantagesData, ScooterSafetyData} from "./constants";
-import MobileApp from "./blocks/MobileApp/mobileapp";
 
 function App() {
     const [theme, setTheme] = useState("dark")

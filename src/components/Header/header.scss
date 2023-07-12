@@ -16,8 +16,9 @@
   &__inner {
     width: 100%;
     display: flex;
-    max-width: 1440px;
     padding: 0 140px;
+    max-width: 1440px;
+    align-items: center;
   }
 
   a:hover {

@@ -23,15 +23,11 @@ body {
 }
 
 .app-dark {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('images/main-bg.png');
+    background-color: #222;
 }
 
 .app-light {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('images/main-white-bg.png');
+    background-color: #E0E0E0;
 }
 
 ul {

@@ -5,7 +5,6 @@
   cursor: pointer;
   position: relative;
   border-radius: 108px;
-  border: 3px solid #F1F1F1;
 
   &__input {
     display: none;
@@ -15,17 +14,13 @@
     }
   }
 
-  &__slider {
-
-    &::before {
-      left: 0;
-      width: 50%;
-      content: '';
-      height: 100%;
-      position: absolute;
-      border-radius: 108px;
-      background-color: #F1F1F1;
-    }
+  &__slider::before {
+    left: 0;
+    width: 50%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    border-radius: 108px;
   }
 
   &__white,
@@ -40,17 +35,30 @@
   &__white {
     left: 35px;
     color: #151515;
-
-    &.switched {
-      color: #F1F1F1;
-    }
   }
+
   &__black {
     right: 37px;
     color: #F1F1F1;
+  }
+}
 
-    &.switched {
-      color: #151515;
+.switch.dark {
+  border: 3px solid #F1F1F1;
+
+  .switch__slider {
+    &::before {
+      background-color: #F1F1F1;
+    }
+  }
+}
+
+.switch.light {
+  border: 3px solid #151515;
+
+  .switch__slider {
+    &::before {
+      background-color: #151515;
     }
   }
 }
