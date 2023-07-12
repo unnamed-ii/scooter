@@ -29,6 +29,7 @@ const Tabs = ({quantity, endpoints, dataForRendering, titleText, titleColor, def
             <Container>
                 <div className="advantages__inner">
                     <Title
+                        width={838}
                         title={titleText}
                         color={titleColor}
                     />

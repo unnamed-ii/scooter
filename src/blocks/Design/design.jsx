@@ -26,6 +26,7 @@ const Design = () => {
             <Container>
                 <div className="design__inner">
                     <Title
+                        width={755}
                         title={"Лаконичный современный дизайн, в котором нет ничего лишнего"}
                     />
                     <div className="design__inner-features">
