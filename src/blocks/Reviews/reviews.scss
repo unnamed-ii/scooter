@@ -3,7 +3,6 @@
 
   &__inner {
     width: 100%;
-
     &-list {
       margin: 40px 0 30px;
 
@@ -14,9 +13,12 @@
           width: 45px;
           height: 45px;
           bottom: -230px;
+          display: flex;
           border-radius: 50%;
           position: absolute;
+          align-items: center;
           background-color: #fff;
+          justify-content: center;
           content: url("../../images/icons/arrow-left.svg");
         }
 
