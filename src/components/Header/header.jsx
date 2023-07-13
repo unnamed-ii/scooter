@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './header.scss';
 import Container from "../Container/container";
 import Button from "../Button/button";
-import logo from '../../images/logo.svg';
+import logoWhite from '../../images/logo.svg';
+import logoOrange from '../../images/orange-logo.svg';
+import {ThemeContext} from "../../Context";
 
 const Header = () => {
+    const {theme} = useContext(ThemeContext);
     const [onScroll, setOnScroll] = useState(false);
     const changeBackgroundColor = () => {
         if (window.scrollY > 100) setOnScroll(true)
@@ -14,10 +17,10 @@ const Header = () => {
 
     return (
         <Container>
-            <header className={"header" + (onScroll ? " on-scroll" : "")}>
+            <header className={`header ${theme}` + (onScroll ? " on-scroll" : "")}>
                 <div className="header__inner">
-                    <a href="/" className="header__logo">
-                        <img src={logo} alt="Logo" />
+                    <a href="#main" className="header__logo">
+                        <img src={theme === "dark" ? logoWhite : logoOrange} alt="Logo" />
                     </a>
                     <div className="header__nav">
                         <ul className="header__nav-menu">

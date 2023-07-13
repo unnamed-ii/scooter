@@ -1,6 +1,5 @@
 .block-title {
   width: 100%;
-  color: #FF4C0D;
 
   h2 {
     font-size: 45px;
@@ -9,15 +8,8 @@
   }
 
   &__subtitle {
+    color: #FF4C0D;
     font-size: 35px;
-  }
-
-  &.white {
-    color: #fff;
-
-    .block-title__subtitle {
-      color: #FF4C0D;
-      margin: 20px 0 39px;
-    }
+    margin: 20px 0 39px;
   }
 }

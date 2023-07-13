@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './main.scss';
 import SwitchButton from "../../components/SwitchButton/switchbutton";
 import Container from "../../components/Container/container";
+import {ThemeContext} from "../../Context";
 
 const Main = () => {
+    const {theme} = useContext(ThemeContext);
+
     return (
-        <section className="main">
+        <section className={`main ${theme}`} id="main">
             <Container>
                 <div className="main__inner">
                     <h1 className="main__inner-title">

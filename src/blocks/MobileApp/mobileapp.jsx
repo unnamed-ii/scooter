@@ -4,8 +4,10 @@ import Container from "../../components/Container/container";
 import Title from "../../components/Title/title";
 import blackPhone from "../../images/mobile-app/black-phone.png";
 import whitePhone from "../../images/mobile-app/white-phone.png";
-import appStore from "../../images/mobile-app/app-store.png";
-import playMarket from "../../images/mobile-app/play-market.png";
+import appStoreDark from "../../images/mobile-app/app-store-dark.png";
+import appStoreLight from "../../images/mobile-app/app-store-light.png";
+import playMarketDark from "../../images/mobile-app/play-market-dark.png";
+import playMarketLight from "../../images/mobile-app/play-market-light.png";
 import {ThemeContext} from "../../Context";
 
 const MobileApp = () => {
@@ -17,7 +19,7 @@ const MobileApp = () => {
                 <div className="mobile-app__inner">
                     <div className="mobile-app__inner-info">
                         <Title
-                            color={"orange"}
+                            color={"#FF4C0D"}
                             title={"Мобильное приложение Mi Home"}
                         />
                         <p className="text">
@@ -29,10 +31,10 @@ const MobileApp = () => {
                         </p>
                         <div className="links">
                             <a href="https://www.apple.com/app-store/" className="links__element">
-                                <img src={appStore} alt="Image"/>
+                                <img src={theme === "dark" ? appStoreLight : appStoreDark} alt="Image"/>
                             </a>
                             <a href="https://play.google.com/store/apps?hl=en_US" className="links__element">
-                                <img src={playMarket} alt="Image"/>
+                                <img src={theme === "dark" ? playMarketLight : playMarketDark} alt="Image"/>
                             </a>
                         </div>
                     </div>

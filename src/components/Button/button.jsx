@@ -1,7 +1,7 @@
 import React from 'react';
 import './button.scss';
 
-const Button = ({title,  color}) => {
+const Button = ({title, color}) => {
     return (
         <button className={"button" + (color === "orange" ? " orange" : "")}>
                 {title}

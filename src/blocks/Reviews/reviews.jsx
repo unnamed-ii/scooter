@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './reviews.scss';
 import Horizontal from "../../components/Horizontal/horizontal";
 import Container from "../../components/Container/container";
 import Button from "../../components/Button/button";
 import Title from "../../components/Title/title";
 import {ReviewsData} from "../../constants";
+import {ThemeContext} from "../../Context";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,6 +25,7 @@ const ReviewCard = ({name, text}) => {
 }
 
 const Reviews = () => {
+    const {theme} = useContext(ThemeContext);
     const sliderSettings = {
         infinite: true,
         speed: 500,
@@ -32,10 +34,11 @@ const Reviews = () => {
     };
 
     return (
-        <section className="reviews" id="reviews">
+        <section className={`reviews ${theme}`} id="reviews">
             <Container>
                 <div className="reviews__inner">
                     <Title
+                        color={"#FF4C0D"}
                         title={"Отзывы о Mi Scooter Pro 2"}
                     />
                     <div className="reviews__inner-list">

@@ -6,7 +6,6 @@
     width: 100%;
 
     &-title {
-      color: #F1F1F1;
       font-size: 80px;
       font-weight: 600;
       max-width: 1065px;
@@ -21,5 +20,15 @@
       line-height: 120%;
       margin-bottom: 68px;
     }
+  }
+}
+
+.main.light {
+  .main__inner-title{
+    color: #FF4C0D;
+  }
+
+  .main__inner-subtitle {
+    color: #151515;
   }
 }

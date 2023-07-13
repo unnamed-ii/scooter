@@ -17,7 +17,7 @@ import {ThemeContext} from './Context';
 
 function App() {
     const [theme, setTheme] = useState("dark");
-    const className = "app-" + theme;
+    const className = `app ${theme}`;
 
     return (
         <ThemeContext.Provider value={{theme, setTheme}}>
@@ -26,7 +26,6 @@ function App() {
                 <Main />
                 <Tabs
                     id={"advantages"}
-                    titleColor={"white"}
                     sectionName={'advantages'}
                     defaultImage={advantageDefaultImage}
                     endpoints={{0:'0', 1:'100', 2:'204'}}
@@ -37,7 +36,7 @@ function App() {
                 <Design/>
                 <Tabs
                     id={"safety"}
-                    titleColor={"orange"}
+                    titleColor={"#FF4C0D"}
                     sectionName={'safety'}
                     defaultImage={safetyDefaultImage}
                     dataForRendering={ScooterSafetyData}

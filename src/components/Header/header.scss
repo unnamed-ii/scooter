@@ -3,11 +3,12 @@
   width: 100%;
   display: flex;
   position: fixed;
-  padding: 40px 0px;
+  padding: 40px 0;
   align-items: center;
   margin-bottom: 130px;
   justify-content: center;
   background-color: transparent;
+  transition: all .3s;
 
   &.on-scroll {
     background-color: #151515;
@@ -39,12 +40,21 @@
       display: flex;
 
       li {
-        color: #F1F1F1;
-
         & + li {
           margin-left: 42px;
         }
       }
+    }
+  }
+}
+
+.header.light {
+  a {
+    color: #151515;
+  }
+  &.on-scroll {
+    a {
+      color: #F1F1F1;
     }
   }
 }

@@ -11,6 +11,7 @@
     &-content {
       top: 120px;
       left: 140px;
+      color: #F1F1F1;
       position: absolute;
 
       .icon {
@@ -22,7 +23,6 @@
         font-weight: 500;
         line-height: 110%;
         margin-bottom: 48px;
-        color: var(--f-1-f-1-f-1, #F1F1F1);
       }
 
       &__text {

@@ -27,6 +27,7 @@ const FAQ = () => {
                 <div className="qas__inner">
                     <div className="qas__inner-block">
                         <Title
+                            color={"#FF4C0D"}
                             title={"Часто задаваемые вопросы"}
                         />
                         <div className="qas__inner-block__text">

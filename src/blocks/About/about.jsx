@@ -12,7 +12,10 @@ const AboutSlide = ({image, title, text}) => {
             <div className="about__slide-inner">
                 <img src={image} alt="Image" className="about__slide-inner__image"/>
                 <div className="about__slide-inner__info">
-                    <Title title={title}/>
+                    <Title
+                        title={title}
+                        color={"#FF4C0D"}
+                    />
                     <div className="text">
                         {text}
                     </div>

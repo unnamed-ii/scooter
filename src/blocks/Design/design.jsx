@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './design.scss'
 import Container from "../../components/Container/container";
 import Title from "../../components/Title/title";
 import {ScooterDesignData} from "../../constants";
+import {ThemeContext} from "../../Context";
 
 const DesignFeatureCard = ({bgImage, title, text}) => {
     return (
@@ -21,12 +22,15 @@ const DesignFeatureCard = ({bgImage, title, text}) => {
 }
 
 const Design = () => {
+    const {theme} = useContext(ThemeContext);
+
     return (
-        <section className="design" id="design">
+        <section className={`design ${theme}`} id="design">
             <Container>
                 <div className="design__inner">
                     <Title
                         width={755}
+                        color={theme === "dark" ? "#FF4C0D" : "#151515"}
                         title={"Лаконичный современный дизайн, в котором нет ничего лишнего"}
                     />
                     <div className="design__inner-features">

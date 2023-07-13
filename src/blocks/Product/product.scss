@@ -19,9 +19,7 @@
     }
 
     &-set {
-
       &__title {
-        color: #FFF;
         font-size: 20px;
         font-weight: 600;
         line-height: 120%;
@@ -35,5 +33,12 @@
         }
       }
     }
+  }
+}
+
+.product.light {
+  .product__inner {
+    background-image: unset;
+    background-color: #fff;
   }
 }
