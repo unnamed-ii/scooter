@@ -1,0 +1,58 @@
+.menu{
+  right: 100px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #F1F1F1;
+  transition-duration: 0.5s;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    opacity: .3;
+  }
+
+  .icon,
+  .icon::before,
+  .icon::after {
+    width: 18px;
+    height: 2px;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #0D1C2E;
+    transition-duration: 0.5s;
+  }
+
+  .icon {
+    top: 26px;
+
+    &:before{
+      bottom: 5px;
+      content: "";
+    }
+
+    &:after{
+      top: 5px;
+      content: "";
+    }
+  }
+
+  &.opened {
+
+    .icon {
+      background: transparent;
+      transition-duration: 0.5s;
+
+      &:before{
+        bottom: 3px;
+        transform: rotateZ(45deg) translateY(2px) translateX(2px) scale(1.5);
+      }
+
+      &:after{
+        top: 7px;
+        transform: rotateZ(-45deg) translateY(-5px) translateX(5px) scale(1.5);
+      }
+    }
+  }
+}

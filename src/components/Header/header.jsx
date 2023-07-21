@@ -5,6 +5,7 @@ import Button from "../Button/button";
 import logoWhite from '../../images/logo.svg';
 import logoOrange from '../../images/orange-logo.svg';
 import {ThemeContext} from "../../Context";
+import BurgerButton from "../BurgerButton/burgerbutton";
 
 const Header = () => {
     const {theme} = useContext(ThemeContext);
@@ -20,7 +21,8 @@ const Header = () => {
             <header className={`header ${theme}` + (onScroll ? " on-scroll" : "")}>
                 <div className="header__inner">
                     <a href="#main" className="header__logo">
-                        <img src={theme === "dark" ? logoWhite : logoOrange} alt="Logo" />
+                        {/*<img src={theme === "dark" ? logoWhite : logoOrange} alt="Logo" />*/}
+                        <BurgerButton />
                     </a>
                     <div className="header__nav">
                         <ul className="header__nav-menu">

@@ -5,3 +5,15 @@
   max-width: 1440px;
   justify-content: center;
 }
+
+@media (width: 640px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (width: 320px) {
+  .container {
+    padding: 0 20px;
+  }
+}
