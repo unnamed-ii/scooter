@@ -1,12 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './burgerbutton.scss';
 
-const BurgerButton = () => {
-    const [isOpened, setIsOpened] = useState(false);
-    const toggleMenu = () => setIsOpened(!isOpened);
+const BurgerButton = ({isMenuOpened, setIsMenuOpened}) => {
+    const toggleMenu = () => setIsMenuOpened(!isMenuOpened);
 
     return (
-        <div className={"menu" + (isOpened ? " opened" : "")} onClick={toggleMenu}>
+        <div className={"menu" + (isMenuOpened ? " opened" : "")} onClick={toggleMenu}>
             <div className="icon" />
         </div>
     );

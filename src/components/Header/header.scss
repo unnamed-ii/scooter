@@ -5,10 +5,10 @@
   position: fixed;
   padding: 40px 0;
   align-items: center;
+  transition: all .3s;
   margin-bottom: 130px;
   justify-content: center;
   background-color: transparent;
-  transition: all .3s;
 
   &.on-scroll {
     background-color: #151515;
@@ -36,6 +36,10 @@
     align-items: center;
     justify-content: space-between;
 
+    &.opened {
+      display: flex;
+    }
+
     &-menu {
       display: flex;
 
@@ -61,6 +65,60 @@
 
 @media (max-width: 640px) {
   .header {
+    &__inner {
+      padding: 0 40px;
+    }
 
+    &__nav {
+      top: -400px;
+      display: none;
+      padding: 20px 0;
+      max-width: 540px;
+      position: absolute;
+      text-align: center;
+      border-radius: 15px;
+      border: 2px solid #F1F1F1;
+      background-color: #151515;
+
+      &.opened {
+        top: 100px;
+        display: block;
+      }
+
+      &-menu {
+        display: block;
+        font-size: 22px;
+        margin-bottom: 10px;
+
+        li {
+          padding: 10px 0;
+          transition: all .3s;
+
+          a {
+            color: #F1F1F1;
+            transition: all .3s;
+          }
+        }
+
+        li + li {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.light {
+      .header__nav {
+        a {
+          color: #F1F1F1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header__nav.opened {
+    left: 20px;
+    max-width: 280px;
   }
 }
