@@ -32,3 +32,44 @@
     color: #151515;
   }
 }
+
+@media (max-width: 640px) {
+  .main {
+    margin-bottom: 162px;
+
+    &__inner {
+      &-title {
+        color: #FF4C0D;
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 39px;
+      }
+
+      &-subtitle {
+        color: #F1F1F1;
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 53px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+
+    &__inner {
+
+      &-title {
+        font-size: 33px;
+        line-height: 100%;
+        margin-bottom: 27px;
+      }
+
+      &-subtitle {
+        font-size: 16px;
+        margin-bottom: 34px;
+      }
+    }
+  }
+}
