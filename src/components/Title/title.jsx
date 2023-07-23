@@ -10,9 +10,9 @@ const Title = ({title, subtitle, color, width}) => {
                 {title}
             </h2>
             {subtitle &&
-                <div className="block-title__subtitle">
+                <h3>
                     {subtitle}
-                </div>
+                </h3>
             }
         </div>
     );

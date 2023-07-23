@@ -7,7 +7,7 @@
     line-height: 110%;
   }
 
-  &__subtitle {
+  h3 {
     color: #FF4C0D;
     font-size: 35px;
     margin: 20px 0 39px;
@@ -21,6 +21,10 @@
       font-weight: 600;
       line-height: 110%;
     }
+
+    h3 {
+      margin: 18px 0 25px;
+    }
   }
 }
 
@@ -29,6 +33,13 @@
     h2 {
       font-size: 25px;
       line-height: 120%;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 110%;
+      margin-bottom: 34px;
     }
   }
 }

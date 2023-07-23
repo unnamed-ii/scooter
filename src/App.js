@@ -49,7 +49,7 @@ function App() {
                     {/*<About/>*/}
                     {/*<Reviews/>*/}
                     <FAQ/>
-                    {/*<Product/>*/}
+                    <Product/>
                     <Footer/>
                 </div>
             </SwitchButtonContext.Provider>

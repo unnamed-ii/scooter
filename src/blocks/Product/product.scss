@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     border-radius: 15px;
+    background-color: #151515;
     padding: 77px 80px 60px 63px;
     background-repeat: no-repeat;
     justify-content: space-between;
@@ -40,5 +41,33 @@
   .product__inner {
     background-image: unset;
     background-color: #fff;
+  }
+}
+
+@media (max-width: 640px) {
+  .product__inner {
+    padding: 45px 0 47px 42px;
+  }
+
+  .product__inner-info .button {
+    margin-top: 110px;
+  }
+
+  .product__inner-set {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .product__inner {
+    padding: 36px 30px 37px;
+
+    .block-title {
+      width: 220px;
+    }
+
+    .button {
+      margin-top: 296px;
+    }
   }
 }
