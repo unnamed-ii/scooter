@@ -12,7 +12,7 @@ const QA = ({question, answer}) => {
             <h4 className="qa__title">
                 {question}
             </h4>
-            <Horizontal width={100}/>
+            <Horizontal />
             <p className="qa__text">
                 {answer}
             </p>

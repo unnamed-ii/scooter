@@ -40,3 +40,66 @@
     margin-top: 23px;
   }
 }
+
+@media (max-width: 640px) {
+  .qas {
+    margin-bottom: 35px;
+
+    &__inner {
+      display: block;
+
+      &-block {
+        margin-bottom: 89px;
+
+        .block-title {
+          font-size: 29px;
+        }
+
+        &__text {
+          margin: 30px 0 36px;
+        }
+      }
+
+      &-list {
+        width: 100%;
+      }
+    }
+  }
+
+  .qa {
+    .horizontal {
+      width: 150px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .qas {
+    margin-bottom: 66px;
+
+    &__inner {
+      &-block {
+        margin-bottom: 67px;
+
+        &__text {
+          margin: 29px 0 21px;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+
+      &-list {
+      }
+    }
+  }
+
+  .qa {
+    margin-bottom: 43px;
+
+    &__title {
+      font-size: 15px;
+    }
+  }
+}

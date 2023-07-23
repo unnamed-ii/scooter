@@ -13,3 +13,22 @@
     margin: 20px 0 39px;
   }
 }
+
+@media (max-width: 640px) {
+  .block-title {
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 110%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .block-title {
+    h2 {
+      font-size: 25px;
+      line-height: 120%;
+    }
+  }
+}

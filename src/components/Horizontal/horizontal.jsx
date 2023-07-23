@@ -1,12 +1,9 @@
 import React from 'react';
 import './horizontal.scss';
 
-const Horizontal = ({width}) => {
+const Horizontal = () => {
     return (
-        <div
-            className="horizontal"
-            style={{width: `${width}px`}}
-        />
+        <div className="horizontal" />
     );
 };
 

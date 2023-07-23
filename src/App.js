@@ -45,10 +45,10 @@ function App() {
                     {/*    titleText={"Заботится о вашей безопасности"}*/}
                     {/*    endpoints={{0: '0', 1: '100', 2: '200', 3: '300'}}*/}
                     {/*/>*/}
-                    <MobileApp/>
+                    {/*<MobileApp/>*/}
                     {/*<About/>*/}
                     {/*<Reviews/>*/}
-                    {/*<FAQ/>*/}
+                    <FAQ/>
                     {/*<Product/>*/}
                     {/*<Footer/>*/}
                 </div>
