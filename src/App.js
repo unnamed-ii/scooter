@@ -50,7 +50,7 @@ function App() {
                     {/*<Reviews/>*/}
                     <FAQ/>
                     {/*<Product/>*/}
-                    {/*<Footer/>*/}
+                    <Footer/>
                 </div>
             </SwitchButtonContext.Provider>
         </ThemeContext.Provider>
