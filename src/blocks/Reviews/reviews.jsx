@@ -26,11 +26,14 @@ const ReviewCard = ({name, text}) => {
 
 const Reviews = () => {
     const {theme} = useContext(ThemeContext);
+    const displayWidth = window.innerWidth;
     const sliderSettings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: displayWidth >= 640,
+        dots: displayWidth < 640,
     };
 
     return (
@@ -38,7 +41,7 @@ const Reviews = () => {
             <Container>
                 <div className="reviews__inner">
                     <Title
-                        color={"#FF4C0D"}
+                        color={displayWidth > 640 ? "#FF4C0D" : "#F1F1F1"}
                         title={"Отзывы о Mi Scooter Pro 2"}
                     />
                     <div className="reviews__inner-list">

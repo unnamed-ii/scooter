@@ -5,7 +5,6 @@
     width: 100%;
     display: flex;
     border-radius: 15px;
-    background-color: #151515;
     padding: 77px 80px 60px 63px;
     background-repeat: no-repeat;
     justify-content: space-between;
@@ -47,6 +46,7 @@
 @media (max-width: 640px) {
   .product__inner {
     padding: 45px 0 47px 42px;
+    background-color: #151515;
   }
 
   .product__inner-info .button {

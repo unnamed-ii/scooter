@@ -47,7 +47,7 @@ function App() {
                     {/*/>*/}
                     {/*<MobileApp/>*/}
                     {/*<About/>*/}
-                    {/*<Reviews/>*/}
+                    <Reviews/>
                     <FAQ/>
                     <Product/>
                     <Footer/>
