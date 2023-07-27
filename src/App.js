@@ -34,7 +34,7 @@ function App() {
                         dataForRendering={ScooterAdvantagesData}
                         titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
                     />
-                    {/*<Speed/>*/}
+                    <Speed/>
                     <Design/>
                     <Tabs
                         id={"safety"}

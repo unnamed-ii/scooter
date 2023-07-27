@@ -4,10 +4,6 @@
   &__inner {
     position: relative;
 
-    &-bg {
-
-    }
-
     &-content {
       top: 120px;
       left: 140px;
@@ -24,10 +20,44 @@
         line-height: 110%;
         margin-bottom: 48px;
       }
+    }
+  }
+}
 
-      &__text {
+@media (max-width: 640px) {
+  .speed__inner-content {
+    left: 440px;
 
-      }
+    &__title {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 35px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 160%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .speed__inner-bg {
+    margin-left: -260px;
+  }
+
+  .speed__inner-content {
+    left: 450px;
+
+    &__title {
+      font-size: 25px;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 170%;
     }
   }
 }
