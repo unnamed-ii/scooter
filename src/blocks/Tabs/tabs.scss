@@ -104,7 +104,7 @@
 
         .tab {
           max-width: unset;
-          margin-bottom: 400px;
+          margin-bottom: 376px;
 
           &__title {
             margin-bottom: 20px;
@@ -140,12 +140,9 @@
             margin-top: 36px;
           }
 
-          &.active-2 {
-            margin-top: 191px;
-          }
-
+          &.active-2,
           &.active-3 {
-            margin-top: 170px;
+            margin-top: 135px;
           }
         }
       }
@@ -157,7 +154,7 @@
 
     .tabs__inner {
       &-list .tab {
-        margin-bottom: 366px;
+        margin-bottom: 375px;
       }
 
       &-photos {
@@ -167,9 +164,12 @@
           margin-top: 40px;
         }
 
-        .tab-photo.active-2,
-        .tab-photo.active-3 {
+        .tab-photo.active-2 {
           margin-top: 157px;
+        }
+
+        .tab-photo.active-3 {
+          margin-top: 133px;
         }
 
         .tab-photo.active-4 {
@@ -207,18 +207,18 @@
       }
 
       &-photos {
-        top: 434px;
+        top: 414px;
 
         .tab-photo.active-1 {
           margin-top: -10px;
         }
 
         .tab-photo.active-2 {
-          margin-top: 205px;
+          margin-top: 193px;
         }
 
         .tab-photo.active-3 {
-          margin-top: 182px;
+          margin-top: 172px;
         }
       }
     }
@@ -228,7 +228,7 @@
     margin-bottom: 70px;
 
     .tabs__inner-photos {
-      top: 232px;
+      top: 210px;
 
       .tab-photo.active-1 {
         margin-top: 20px;
@@ -236,7 +236,7 @@
 
       .tab-photo.active-2,
       .tab-photo.active-3 {
-        margin-top: 203px;
+        margin-top: 194px;
       }
 
       .tab-photo.active-4 {
