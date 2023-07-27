@@ -22,6 +22,7 @@ const Tabs = ({sectionName, endpoints, dataForRendering, titleText, titleColor, 
     const [activeTab, setActiveTab] = useState(0);
     const handleActiveTab = (idx) => setActiveTab(idx);
 
+    const monitorWidth = window.innerWidth;
     const horizontalSpanWidth = sectionName === "advantages" ? 33 : 25;
     const translateXTo = {transform: `translateX(${endpoints[activeTab]}%)`, width: `${horizontalSpanWidth}%`}
 
@@ -38,23 +39,26 @@ const Tabs = ({sectionName, endpoints, dataForRendering, titleText, titleColor, 
                         <div className={`progress-horizontal ${sectionName}`}>
                             <span style={translateXTo}/>
                         </div>
-                        {dataForRendering.map((advantage, idx) => (
+                        {dataForRendering.map((element, idx) => (
                             <Tab
-                                idx={idx}
-                                activeTab={activeTab}
+                                idx={monitorWidth <= 640 ? true : idx}
+                                activeTab={monitorWidth <= 640 ? true : activeTab}
                                 handleActiveTab={handleActiveTab}
-                                advantage={advantage}
+                                advantage={element}
                             />
                         ))}
                     </div>
                     <div className="tabs__inner-photos">
-                        <img src={dataForRendering[activeTab].image}
-                             alt="Image"
-                             className="tabs__inner-photos__active"
-                        />
+                        {dataForRendering.map((element, idx) => (
+                            <img src={element.image}
+                                 alt="Image"
+                                 className={"tab-photo" +
+                                 (idx === activeTab || monitorWidth <= 640 ? ` active active-${idx+1}` : "")}
+                            />
+                        ))}
                         <img src={defaultImage}
                              alt="Image"
-                             className="tabs__inner-photos__default"
+                             className="default-photo"
                         />
                     </div>
                 </div>

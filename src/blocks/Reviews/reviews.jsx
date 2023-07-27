@@ -30,7 +30,7 @@ const Reviews = () => {
     const sliderSettings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: displayWidth > 1210 ? 2 : 1,
         slidesToScroll: 1,
         arrows: displayWidth >= 640,
         dots: displayWidth < 640,
