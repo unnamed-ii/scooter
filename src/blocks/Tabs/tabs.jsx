@@ -41,8 +41,8 @@ const Tabs = ({sectionName, endpoints, dataForRendering, titleText, titleColor, 
                         </div>
                         {dataForRendering.map((element, idx) => (
                             <Tab
-                                idx={monitorWidth <= 640 ? true : idx}
-                                activeTab={monitorWidth <= 640 ? true : activeTab}
+                                idx={monitorWidth <= 1440 ? true : idx}
+                                activeTab={monitorWidth <= 1440 ? true : activeTab}
                                 handleActiveTab={handleActiveTab}
                                 advantage={element}
                             />
@@ -53,7 +53,7 @@ const Tabs = ({sectionName, endpoints, dataForRendering, titleText, titleColor, 
                             <img src={element.image}
                                  alt="Image"
                                  className={"tab-photo" +
-                                 (idx === activeTab || monitorWidth <= 640 ? ` active active-${idx+1}` : "")}
+                                 (idx === activeTab || monitorWidth <= 1440 ? ` active active-${idx+1}` : "")}
                             />
                         ))}
                         <img src={defaultImage}

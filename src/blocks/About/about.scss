@@ -48,13 +48,24 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1440px) {
   .about .slick-dots {
     right: 40px;
     bottom: 165px;
 
     li button::before {
       font-size: 15px;
+    }
+  }
+
+  .about {
+    &__slide-inner {
+      width: 640px;
+      height: 420px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -70,6 +81,6 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 640px) {
 
 }
