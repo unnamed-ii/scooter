@@ -40,10 +40,36 @@
           max-width: 460px;
 
           p + p {
-            margin-top: 24px;
+            margin-top: 25px;
           }
         }
       }
     }
   }
+}
+
+@media (max-width: 640px) {
+  .about .slick-dots {
+    right: 40px;
+    bottom: 165px;
+
+    li button::before {
+      font-size: 15px;
+    }
+  }
+
+  .about__slide-inner__info {
+    left: 40px;
+    bottom: 69px;
+
+    .text {
+      font-size: 14px;
+      margin-top: 20px;
+      line-height: 160%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+
 }

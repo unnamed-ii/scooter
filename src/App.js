@@ -45,7 +45,7 @@ function App() {
                         endpoints={{0: '0', 1: '100', 2: '200', 3: '300'}}
                     />
                     <MobileApp/>
-                    {/*<About/>*/}
+                    <About/>
                     <Reviews/>
                     <FAQ/>
                     <Product/>

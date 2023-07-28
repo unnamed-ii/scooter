@@ -26,6 +26,7 @@ const AboutSlide = ({image, title, text}) => {
 }
 
 const About = () => {
+    const slideImageId = window.innerWidth > 640 ? 0 : 1;
     const sliderSettings = {
         dots: true,
         speed: 500,
@@ -41,7 +42,7 @@ const About = () => {
                     <AboutSlide
                         text={slide.text}
                         title={slide.title}
-                        image={slide.image}
+                        image={slide.image[slideImageId]}
                     />
                 ))}
             </Slider>

@@ -1,5 +1,6 @@
 import React from "react";
 import aboutSlider1 from './images/about-slider.png';
+import aboutSlider640 from './images/about-slider-640.png';
 import minimalism from './images/design/minimalism.png';
 import panel from './images/design/panel.png';
 import advantage1 from './images/advantages/active1.png';
@@ -144,7 +145,7 @@ export const ScooterSafetyData = [
 
 export const ScooterAboutSliderData = [
     {
-        image: aboutSlider1,
+        image: [aboutSlider1, aboutSlider640],
         title: 'О бренде Xiaomi',
         text:
             <span>
@@ -153,7 +154,7 @@ export const ScooterAboutSliderData = [
             </span>
     },
     {
-        image: aboutSlider1,
+        image: [aboutSlider1, aboutSlider640],
         title: 'О бренде Xiaomi',
         text:
             <span>
@@ -162,7 +163,7 @@ export const ScooterAboutSliderData = [
             </span>
     },
     {
-        image: aboutSlider1,
+        image: [aboutSlider1, aboutSlider640],
         title: 'О бренде Xiaomi',
         text:
             <span>
