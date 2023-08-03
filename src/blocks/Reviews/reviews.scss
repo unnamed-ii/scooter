@@ -10,6 +10,10 @@
       .slick-slider {
         position: relative;
 
+        .slick-list {
+          overflow: visible;
+        }
+
         .slick-prev:before,
         .slick-next:before {
           width: 45px;
