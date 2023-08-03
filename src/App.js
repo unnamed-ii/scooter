@@ -24,32 +24,32 @@ function App() {
         <ThemeContext.Provider value={{theme, setTheme}}>
             <SwitchButtonContext.Provider value={{isChecked, setIsChecked}}>
                 <div className={className}>
-                    <Header/>
-                    <Main/>
-                    <Tabs
-                        id={"advantages"}
-                        sectionName={'advantages'}
-                        defaultImage={advantageDefaultImage}
-                        endpoints={{0: '0', 1: '100', 2: '204'}}
-                        dataForRendering={ScooterAdvantagesData}
-                        titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
-                    />
-                    <Speed/>
-                    <Design/>
-                    <Tabs
-                        id={"safety"}
-                        sectionName={'safety'}
-                        defaultImage={safetyDefaultImage}
-                        dataForRendering={ScooterSafetyData}
-                        titleText={"Заботится о вашей безопасности"}
-                        endpoints={{0: '0', 1: '100', 2: '200', 3: '300'}}
-                    />
-                    <MobileApp/>
-                    <About/>
+                    {/*<Header/>*/}
+                    {/*<Main/>*/}
+                    {/*<Tabs*/}
+                    {/*    id={"advantages"}*/}
+                    {/*    sectionName={'advantages'}*/}
+                    {/*    defaultImage={advantageDefaultImage}*/}
+                    {/*    endpoints={{0: '0', 1: '100', 2: '204'}}*/}
+                    {/*    dataForRendering={ScooterAdvantagesData}*/}
+                    {/*    titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}*/}
+                    {/*/>*/}
+                    {/*<Speed/>*/}
+                    {/*<Design/>*/}
+                    {/*<Tabs*/}
+                    {/*    id={"safety"}*/}
+                    {/*    sectionName={'safety'}*/}
+                    {/*    defaultImage={safetyDefaultImage}*/}
+                    {/*    dataForRendering={ScooterSafetyData}*/}
+                    {/*    titleText={"Заботится о вашей безопасности"}*/}
+                    {/*    endpoints={{0: '0', 1: '100', 2: '200', 3: '300'}}*/}
+                    {/*/>*/}
+                    {/*<MobileApp/>*/}
+                    {/*<About/>*/}
                     <Reviews/>
-                    <FAQ/>
-                    <Product/>
-                    <Footer/>
+                    {/*<FAQ/>*/}
+                    {/*<Product/>*/}
+                    {/*<Footer/>*/}
                 </div>
             </SwitchButtonContext.Provider>
         </ThemeContext.Provider>
