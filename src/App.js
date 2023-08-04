@@ -24,8 +24,8 @@ function App() {
         <ThemeContext.Provider value={{theme, setTheme}}>
             <SwitchButtonContext.Provider value={{isChecked, setIsChecked}}>
                 <div className={className}>
-                    {/*<Header/>*/}
-                    {/*<Main/>*/}
+                    <Header/>
+                    <Main/>
                     {/*<Tabs*/}
                     {/*    id={"advantages"}*/}
                     {/*    sectionName={'advantages'}*/}
@@ -46,7 +46,7 @@ function App() {
                     {/*/>*/}
                     {/*<MobileApp/>*/}
                     {/*<About/>*/}
-                    <Reviews/>
+                    {/*<Reviews/>*/}
                     {/*<FAQ/>*/}
                     {/*<Product/>*/}
                     {/*<Footer/>*/}
