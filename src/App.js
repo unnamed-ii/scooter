@@ -24,8 +24,8 @@ function App() {
         <ThemeContext.Provider value={{theme, setTheme}}>
             <SwitchButtonContext.Provider value={{isChecked, setIsChecked}}>
                 <div className={className}>
-                    <Header/>
-                    <Main/>
+                    {/*<Header/>*/}
+                    {/*<Main/>*/}
                     {/*<Tabs*/}
                     {/*    id={"advantages"}*/}
                     {/*    sectionName={'advantages'}*/}
@@ -45,7 +45,7 @@ function App() {
                     {/*    endpoints={{0: '0', 1: '100', 2: '200', 3: '300'}}*/}
                     {/*/>*/}
                     {/*<MobileApp/>*/}
-                    {/*<About/>*/}
+                    <About/>
                     {/*<Reviews/>*/}
                     {/*<FAQ/>*/}
                     {/*<Product/>*/}
