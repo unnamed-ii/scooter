@@ -104,7 +104,7 @@
 
         .tab {
           max-width: unset;
-          margin-bottom: 376px;
+          margin-bottom: 440px;
 
           &__title {
             margin-bottom: 20px;
@@ -137,12 +137,12 @@
           height: auto;
 
           &.active-1 {
-            margin-top: 36px;
+            margin-top: 71px;
           }
 
           &.active-2,
           &.active-3 {
-            margin-top: 135px;
+            margin-top: 190px;
           }
         }
       }
@@ -202,81 +202,60 @@
 }
 
 @media (max-width: 690px) {
-  .tabs.advantages .tabs__inner-photos {
-    top: 380px;
+  .tabs.advantages .tabs__inner-photos .tab-photo.active-1 {
+    margin-top: 220px;
   }
 }
 
 @media (max-width: 640px) {
-  .tabs {
-    display: none;
-  }
-
-  .tabs.advantages,
-  .tabs.safety {
-    margin-bottom: 685px;
-
-    .tabs__inner {
-      &-list {
-        margin-top: 40px;
-
-        .tab {
-          margin-bottom: 170px;
-
-          &__title {
-            font-size: 15px;
-
-            &::before {
-              width: 100px;
-            }
-          }
-
-          &__text {
-            margin-top: 35px;
-          }
-        }
-      }
-
-      &-photos {
-        top: 320px;
-
-        .tab-photo.active-1 {
-          margin-top: -10px;
-        }
-
-        .tab-photo.active-2 {
-          margin-top: 193px;
-        }
-
-        .tab-photo.active-3 {
-          margin-top: 172px;
-        }
-      }
-    }
-  }
-
-  .tabs.safety {
-    margin-bottom: 70px;
-
-    .tabs__inner-photos {
-      top: 210px;
-
-      .tab-photo.active-1 {
-        margin-top: 20px;
-      }
-
-      .tab-photo.active-2,
-      .tab-photo.active-3 {
-        margin-top: 194px;
-      }
-
-      .tab-photo.active-4 {
-        margin-top: 160px;
-      }
-    }
+  .tabs.advantages .tabs__inner-photos .tab-photo.active-1 {
+    margin-top: 60px;
   }
 }
 
 @media (max-width: 580px) {
+  .tabs.advantages .tabs__inner-photos .tab-photo.active-1 {
+    margin-top: 120px;
+  }
 
+  .tabs.advantages .tabs__inner-photos .tab-photo.active-2,
+  .tabs.advantages .tabs__inner-photos .tab-photo.active-3 {
+    margin-top: 270px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabs.advantages .tabs__inner-list .tab {
+    margin-bottom: 400px;
+  }
+}
+
+@media (max-width: 460px) {
+  .tabs.advantages .tabs__inner-photos .tab-photo.active-1 {
+    margin-top: 185px;
+  }
+}
+
+@media (max-width: 430px) {
+  .tabs.advantages .tabs__inner-list .tab {
+    margin-bottom: 358px;
+  }
+}
+
+@media (max-width: 395px) {
+  .tabs.advantages .tabs__inner-list .tab {
+    margin-bottom: 305px;
+  }
+}
+
+@media (max-width: 365px) {
+  .tabs.advantages .tabs__inner-list .tab {
+    margin-bottom: 245px;
+  }
+}
+
+@media (max-width: 320px) {
+  .tabs.advantages .tabs__inner-photos .tab-photo.active-1 {
+    margin-top: 200px;
+  }
 }

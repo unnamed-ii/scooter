@@ -26,14 +26,14 @@ function App() {
                 <div className={className}>
                     {/*<Header/>*/}
                     {/*<Main/>*/}
-                    {/*<Tabs*/}
-                    {/*    id={"advantages"}*/}
-                    {/*    sectionName={'advantages'}*/}
-                    {/*    defaultImage={advantageDefaultImage}*/}
-                    {/*    endpoints={{0: '0', 1: '100', 2: '204'}}*/}
-                    {/*    dataForRendering={ScooterAdvantagesData}*/}
-                    {/*    titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}*/}
-                    {/*/>*/}
+                    <Tabs
+                        id={"advantages"}
+                        sectionName={'advantages'}
+                        defaultImage={advantageDefaultImage}
+                        endpoints={{0: '0', 1: '100', 2: '204'}}
+                        dataForRendering={ScooterAdvantagesData}
+                        titleText={"Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км"}
+                    />
                     {/*<Speed/>*/}
                     {/*<Design/>*/}
                     {/*<Tabs*/}
@@ -45,7 +45,7 @@ function App() {
                     {/*    endpoints={{0: '0', 1: '100', 2: '200', 3: '300'}}*/}
                     {/*/>*/}
                     {/*<MobileApp/>*/}
-                    <About/>
+                    {/*<About/>*/}
                     {/*<Reviews/>*/}
                     {/*<FAQ/>*/}
                     {/*<Product/>*/}
